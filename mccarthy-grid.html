@@ -1,0 +1,118 @@
+<html>
+<head>
+	<title>JS fiddling file</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<!-- <script type="text/javascript" src="script.js" defer></script> -->
+</head>
+<body>
+
+	<a href="index.html">Back</a>
+
+	<table>
+	<tbody>
+		<tr>
+			<td><!-- Leadership --><a href="https://www.mccarthy.ca/en/covid-19-hub-leadership-governance-and-securities" onmouseout="rollOut('lead')" onmouseover="rollOver('lead')"><img alt="" name="lead" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Leadership_EN.png" /> </a></td>
+			<td><!-- Labour --><a href="https://www.mccarthy.ca/en/covid-19-hub-labour-and-employment" onmouseout="rollOut('labour')" onmouseover="rollOver('labour')"><img alt="" name="labour" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Labour_EN.png" /> </a></td>
+			<td><!-- Commercial contracts --><a href="https://www.mccarthy.ca/en/covid-19-hub-commercial-contracts-and-supply-chain" onmouseout="rollOut('comm')" onmouseover="rollOver('comm')"><img alt="" name="comm" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Commercial_EN.png" /> </a></td>
+		</tr>
+		<tr>
+			<td><!-- Government Response --><a href="https://www.mccarthy.ca/en/covid-19-hub-government-response-and-economic-relief" onmouseout="rollOut('govt')" onmouseover="rollOver('govt')"><img alt="" name="govt" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_v2_Gov_EN.png" /> </a></td>
+			<td><!-- Financing --><a href="https://www.mccarthy.ca/en/covid-19-hub-financing-investment-and-restructuring" onmouseout="rollOut('fin')" onmouseover="rollOver('fin')"><img alt="" name="fin" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Finance_EN.png" /> </a></td>
+			<td><!-- Technology --><a href="https://www.mccarthy.ca/en/covid-19-hub-regulatory-technology-and-cyber-security" onmouseout="rollOut('tech')" onmouseover="rollOver('tech')"><img alt="" name="tech" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Reg_EN.png" /> </a></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td><!-- Risk Management --><a href="https://www.mccarthy.ca/en/covid-19-hub-risk-management-insurance-and-disputes" onmouseout="rollOut('risk')" onmouseover="rollOver('risk')"><img alt="" name="risk" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Risk_EN.png" /> </a></td>
+			<td><!-- Focus on industry sectors --><a href="https://www.mccarthy.ca/en/cobid-19-hub-focus-industry-sectors" onmouseout="rollOut('focus')" onmouseover="rollOver('focus')"><img alt="" name="focus" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Ind_Sector_EN.png" /> </a></td>
+			<td><!-- Multimedia  --><a href="https://www.mccarthy.ca/en/covid-19-hub-multimedia" onmouseout="rollOut('mmedia')" onmouseover="rollOver('mmedia')"><img alt="" name="mmedia" src="https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Multimedia_EN.png" /> </a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+
+</body>
+
+<script type="text/javascript">
+
+// preload images
+
+// Leadership
+leadOff = new Image()
+leadOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Leadership_EN.png"
+
+leadOn = new Image()
+leadOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Leadership_EN.png"
+
+// Labour
+labourOff = new Image()
+labourOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Labour_EN.png"
+
+labourOn = new Image()
+labourOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Labour_EN.png"
+
+// Commercial 
+commOff = new Image()
+commOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Commercial_EN.png"
+
+commOn = new Image()
+commOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Commercial_EN.png"
+
+// Government
+govtOff = new Image()
+govtOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_v2_Gov_EN.png"
+
+govtOn = new Image()
+govtOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_v2_Gov_EN.png"
+
+// Finance
+finOff = new Image()
+finOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Finance_EN.png"
+
+finOn = new Image()
+finOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Finance_EN.png"
+
+// Technology
+techOff = new Image()
+techOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Reg_EN.png"
+
+techOn = new Image()
+techOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Reg_EN.png"
+
+// Risk
+riskOff = new Image()
+riskOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Risk_EN.png"
+
+riskOn = new Image()
+riskOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Risk_EN.png"
+
+// Focus
+focusOff = new Image()
+focusOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Ind_Sector_EN.png"
+
+focusOn = new Image()
+focusOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Ind_Sector_EN.png"
+
+// Multimedia
+mmediaOff = new Image()
+mmediaOff.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_base_Multimedia_EN.png"
+
+mmediaOn = new Image()
+mmediaOn.src = "https://www.mccarthy.ca/sites/default/files/2020-04/Hub_updates_April2020_rollover_Multimedia_EN.png"
+
+
+function rollOver (imgName)
+{
+    document.images[imgName].src = eval(imgName + "On.src")
+}
+
+function rollOut (imgName)
+{
+    document.images[imgName].src = eval(imgName + "Off.src")
+}
+</script>
+
+</html>
